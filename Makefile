@@ -4,5 +4,5 @@ ifeq ("$(wildcard class)", "")
 endif 
 
 java: pre-build 
-	javac -cp .;lib/system-hook-3.8.jar -d class src/Minesweeper.java
+	javac -cp .;lib/system-hook-3.8.jar -d class src/Minesweeper.java src/StatusWindow.java 
 	java -cp .;lib/system-hook-3.8.jar;class Minesweeper
